@@ -10,6 +10,10 @@
 		E5715FC11DBFB8430091E92E /* KeyboardAdjustable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5715FB71DBFB8430091E92E /* KeyboardAdjustable.framework */; };
 		E5715FC61DBFB8430091E92E /* KeyboardAdjustableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5715FC51DBFB8430091E92E /* KeyboardAdjustableTests.swift */; };
 		E5715FC81DBFB8430091E92E /* KeyboardAdjustable.h in Headers */ = {isa = PBXBuildFile; fileRef = E5715FBA1DBFB8430091E92E /* KeyboardAdjustable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5715FD21DBFB8960091E92E /* KeyboardAdjustable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5715FD11DBFB8960091E92E /* KeyboardAdjustable.swift */; };
+		E5715FD41DBFB8DD0091E92E /* Notification+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5715FD31DBFB8DD0091E92E /* Notification+Keyboard.swift */; };
+		E5715FD91DBFC3950091E92E /* KeyboardStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5715FD81DBFC3950091E92E /* KeyboardStatus.swift */; };
+		E5715FE51DBFCFFC0091E92E /* KBAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5715FE41DBFCFFC0091E92E /* KBAViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,12 @@
 		E5715FC01DBFB8430091E92E /* KeyboardAdjustableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardAdjustableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5715FC51DBFB8430091E92E /* KeyboardAdjustableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAdjustableTests.swift; sourceTree = "<group>"; };
 		E5715FC71DBFB8430091E92E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5715FD11DBFB8960091E92E /* KeyboardAdjustable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAdjustable.swift; sourceTree = "<group>"; };
+		E5715FD31DBFB8DD0091E92E /* Notification+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification+Keyboard.swift"; sourceTree = "<group>"; };
+		E5715FD81DBFC3950091E92E /* KeyboardStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardStatus.swift; sourceTree = "<group>"; };
+		E5715FE01DBFCD230091E92E /* KBAViewControllerNoBlocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KBAViewControllerNoBlocks.swift; path = Examples/KBAViewControllerNoBlocks.swift; sourceTree = "<group>"; };
+		E5715FE21DBFCFF40091E92E /* CustomKBAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomKBAViewController.swift; path = Examples/CustomKBAViewController.swift; sourceTree = "<group>"; };
+		E5715FE41DBFCFFC0091E92E /* KBAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KBAViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,7 @@
 		E5715FAD1DBFB8430091E92E = {
 			isa = PBXGroup;
 			children = (
+				E5715FD51DBFB9C30091E92E /* Examples */,
 				E5715FB91DBFB8430091E92E /* KeyboardAdjustable */,
 				E5715FC41DBFB8430091E92E /* KeyboardAdjustableTests */,
 				E5715FB81DBFB8430091E92E /* Products */,
@@ -71,6 +82,10 @@
 		E5715FB91DBFB8430091E92E /* KeyboardAdjustable */ = {
 			isa = PBXGroup;
 			children = (
+				E5715FD11DBFB8960091E92E /* KeyboardAdjustable.swift */,
+				E5715FD81DBFC3950091E92E /* KeyboardStatus.swift */,
+				E5715FD31DBFB8DD0091E92E /* Notification+Keyboard.swift */,
+				E5715FE41DBFCFFC0091E92E /* KBAViewController.swift */,
 				E5715FBA1DBFB8430091E92E /* KeyboardAdjustable.h */,
 				E5715FBB1DBFB8430091E92E /* Info.plist */,
 			);
@@ -84,6 +99,15 @@
 				E5715FC71DBFB8430091E92E /* Info.plist */,
 			);
 			path = KeyboardAdjustableTests;
+			sourceTree = "<group>";
+		};
+		E5715FD51DBFB9C30091E92E /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				E5715FE21DBFCFF40091E92E /* CustomKBAViewController.swift */,
+				E5715FE01DBFCD230091E92E /* KBAViewControllerNoBlocks.swift */,
+			);
+			name = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +172,7 @@
 				TargetAttributes = {
 					E5715FB61DBFB8430091E92E = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					E5715FBF1DBFB8430091E92E = {
@@ -196,6 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5715FD91DBFC3950091E92E /* KeyboardStatus.swift in Sources */,
+				E5715FD21DBFB8960091E92E /* KeyboardAdjustable.swift in Sources */,
+				E5715FD41DBFB8DD0091E92E /* Notification+Keyboard.swift in Sources */,
+				E5715FE51DBFCFFC0091E92E /* KBAViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +349,7 @@
 		E5715FCC1DBFB8430091E92E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.RyanDemo.KeyboardAdjustable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +369,7 @@
 		E5715FCD1DBFB8430091E92E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +388,7 @@
 		E5715FCF1DBFB8430091E92E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = KeyboardAdjustableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RyanDemo.KeyboardAdjustableTests;
@@ -367,6 +400,7 @@
 		E5715FD01DBFB8430091E92E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = KeyboardAdjustableTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RyanDemo.KeyboardAdjustableTests;
@@ -394,6 +428,7 @@
 				E5715FCD1DBFB8430091E92E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E5715FCE1DBFB8430091E92E /* Build configuration list for PBXNativeTarget "KeyboardAdjustableTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +437,7 @@
 				E5715FD01DBFB8430091E92E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
