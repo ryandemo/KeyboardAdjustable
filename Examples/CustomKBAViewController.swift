@@ -10,7 +10,7 @@ import Foundation
 
 /// Example keyboard adjustable view controller.
 ///
-/// In such a subclass of `KBAViewController`, it is only necesasry to override `moveToViewWithKeyboard` and `moveToViewWithoutKeyboard`.
+/// In such a subclass of `KBAViewController`, it is only necesasry to override `adjustViewForKeyboard` and `adjustViewForNoKeyboard`.
 class CustomKBAViewController: KBAViewController {
     
     override func viewDidLoad() {
